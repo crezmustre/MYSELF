@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Services & Packages</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #121212;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .grid-container {
+            padding-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card {
+            background: #1e1e1e;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #222, #444);
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5rem;
+            color: #ffcc00;
+        }
+
+        .card-content p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .Service-name {
+            padding-top: 3rem;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffcc00;
+            text-align: center;
+        }
+
+        .packages {
+            background: #1e1e1e;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 1100px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+            text-align: center;
+        }
+
+        .packages h2 {
+            color: #ffcc00;
+        }
+
+        .packages ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .packages ul li {
+            background: #292929;
+            margin: 10px 0;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            color: #ddd;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ff5500;
+            margin-top: 15px;
+        }
+
+        .contact {
+            margin-top: 10px;
+            font-size: 1.1rem;
+            color: #fff;
+        }
+
+        .contact b {
+            color: #ffcc00;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+
+            .packages {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo font-bold">Penguin Sales & Services Company</div>
+        <div class="search-box">
+            <input type="text" placeholder="Search...">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a href="#">Services &#9662;</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Bridal Car Services</a></li>
+                    <li><a href="#">Towing Services 24/7</a></li>
+                    <li><a href="#">Trucking Services</a></li>
+                    <li><a href="#">Heavy Equipment Rental</a></li>
+                    <li><a href="#">General Construction & Maintenance Services</a></li>
+                    <li><a href="#">Furniture Hotel & Residential</a></li>
+                    <li><a href="#">Auto Parts</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+<div class="Service-name">
+    <p>Bridal Cars</p>
+</div>
+    <div class="grid-container" id="Bridal">
+        <div class="card">
+            <img src="IMG/camaroo.jpg" alt="Image 1">
+            <div class="card-content">
+                <h3>Chevrolet Camaro</h3>
+                <p>Luxury car rental for your special day.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="IMG/mercedes.jpg" alt="Image 2">
+            <div class="card-content">
+                <h3>Mercedes Benz</h3>
+                <p>24/7 emergency towing and roadside assistance.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="IMG/volks.jpeg" alt="Image 3">
+            <div class="card-content">
+                <h3>Volkswagen </h3>
+                <p>Arrive in style with our premium wedding cars.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMG/black-bmw-decorated-with-white-wedding-bouquets-1.jpg" alt="Image 3">
+            <div class="card-content">
+                <h3>Luxury Wedding Cars</h3>
+                <p>Arrive in style with our premium wedding cars.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMG/civic.jpg" alt="Image 3">
+            <div class="card-content">
+                <h3>Honda Civic</h3>
+                <p>Arrive in style with our premium wedding cars.</p>
+            </div>
+        </div>
+    </div>
+    <div class="packages">
+        <h2>Package Includes:</h2>
+        <ul>
+            <li>🌹 Bouquet of Flowers</li>
+            <li>🚨 VIP Blinkers</li>
+            <li>👔 Driver in Semi-Formal Attire</li>
+            <li>🏨 Hotel to Ceremony Transport</li>
+            <li>💒 Ceremony to Reception Transport</li>
+            <li>⏳ First 3 Hours Included</li>
+            <li>💰 Additional Fee for Extra Hours</li>
+        </ul>
+        <div class="price">Price starts at PHP 4,000.00 (BMW E39)</div>
+        <div class="contact">📞 Contact us for bookings: <b>(0923) 086 8342</b></div>
+        <p class="contact" style="font-size: 0.9rem; color: red;">*Price is subject to change without prior notice.</p>
+    </div>
+
+    <!--New Content-->
+    <div class="Service-name">
+        <p>Towing Services</p>
+    </div>
+        <div class="grid-container" id="Bridal">
+            <div class="card">
+                <img src="IMG/towtruck.jpg" alt="Image 1">
+                <div class="card-content">
+                    <h3>Bumblelee</h3>
+                    <p>Luxury car rental for your special day.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="IMG/towtruck2.jpg" alt="Image 2">
+                <div class="card-content">
+                    <h3>Mater</h3>
+                    <p>24/7 emergency towing and roadside assistance.</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <img src="IMG/towtruck3.png" alt="Image 3">
+                <div class="card-content">
+                    <h3>Big Blue </h3>
+                    <p>Arrive in style with our premium wedding cars.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="IMG/towww.jpg" alt="Image 3">
+                <div class="card-content">
+                    <h3>Optimum Prime</h3>
+                    <p>Arrive in style with our premium wedding cars.</p>
+                </div>
+            </div>
+        </div>
+        
+    
+        <div class="packages">
+            <h2>Towing Services 24/7:</h2>
+            <ul>
+                <li>24-Hour Towing & Roadside Assistance</li>
+                <li>Light-Duty Towing</li>
+                <li>Heavy-Duty Towing</li>
+                <li>Long-Distance Towing</li>
+                <li>Flatbed Towing</li>
+            </ul>
+            <div class="contact">📞 Emergency Hotline:  <b>(0923) 086 8342</b></div>
+        </div>
+        <div class="Service-name">
+    <p>Trucking Services</p>
+</div>
+    <div class="grid-container" id="Bridal">
+        <div class="card">
+            <img src="IMG/canter.jpg" alt="Image 1">
+            <div class="card-content">
+                <h3>MITSUBISHI Canter</h3>
+                <p>Luxury car rental for your special day.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="IMG/fakin.jpg" alt="Image 2">
+            <div class="card-content">
+                <h3>Pulo Flat Bed</h3>
+                <p>24/7 emergency towing and roadside assistance.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="IMG/TRUCKIN.png" alt="Image 3">
+            <div class="card-content">
+                <h3>Volkswagen </h3>
+                <p>Arrive in style with our premium wedding cars.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMG/FCKIN.jpg" alt="Image 3">
+            <div class="card-content">
+                <h3>Luxury Wedding Cars</h3>
+                <p>Arrive in style with our premium wedding cars.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="packages">
+        <h2>Package Includes:</h2>
+        <ul>
+            <li>🌹 Bouquet of Flowers</li>
+            <li>🚨 VIP Blinkers</li>
+            <li>👔 Driver in Semi-Formal Attire</li>
+            <li>🏨 Hotel to Ceremony Transport</li>
+            <li>💒 Ceremony to Reception Transport</li>
+            <li>⏳ First 3 Hours Included</li>
+            <li>💰 Additional Fee for Extra Hours</li>
+        </ul>
+        <div class="price">Price starts at PHP 4,000.00 (BMW E39)</div>
+        <div class="contact">📞 Emergency Hotline:  <b>(0923) 086 8342</b></div>
+        <p class="contact" style="font-size: 0.9rem; color: red;">*Price is subject to change without prior notice.</p>
+    </div>
+    <div class="grid-container" id="heavy">
+        <div class="card">
+            <img src="IMG/backhoe.jpg" alt="Image 1">
+            <div class="card-content">
+                <h3>CAT Excavator</h3>
+                <p>Luxury car rental for your special day.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="IMG/bulldog.JPG" alt="Image 2">
+            <div class="card-content">
+                <h3>Hitachi Bulldozer</h3>
+                <p>24/7 emergency towing and roadside assistance.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="IMG/forklift.jpg" alt="Image 3">
+            <div class="card-content">
+                <h3>Volkswagen Forklift </h3>
+                <p>Arrive in style with our premium wedding cars.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMG/roller.jpg" alt="Image 3">
+            <div class="card-content">
+                <h3>CAT Roller</h3>
+                <p>Arrive in style with our premium wedding cars.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="IMG/loader.jpg" alt="Image 3">
+            <div class="card-content">
+                <h3>Lugong Loader</h3>
+                <p>Arrive in style with our premium wedding cars.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="packages">
+        <h2>Package Includes:</h2>
+        <ul>
+            <li>🌹 Bouquet of Flowers</li>
+            <li>🚨 VIP Blinkers</li>
+            <li>👔 Driver in Semi-Formal Attire</li>
+            <li>🏨 Hotel to Ceremony Transport</li>
+            <li>💒 Ceremony to Reception Transport</li>
+            <li>⏳ First 3 Hours Included</li>
+            <li>💰 Additional Fee for Extra Hours</li>
+        </ul>
+        <div class="price">Price starts at PHP 4,000.00 (BMW E39)</div>
+        <div class="contact">📞 Contact us for bookings: <b>(0923) 086 8342</b></div>
+        <p class="contact" style="font-size: 0.9rem; color: red;">*Price is subject to change without prior notice.</p>
+    </div>
+</body>
+</html>

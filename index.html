@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penguin</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            height: 100vh;
+            background: url(IMG/BG.jpg) no-repeat center center fixed;
+            background-size: 100%;
+            position: fi;
+        }
+        .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 200px;
+        background: #777777;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        }
+        body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(0,0,0,0) 30%, rgba(0,0,0,0.7) 100%);
+        pointer-events: none;
+        }
+    
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo font-bold">Penguin Sales & Services Company</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li class="dropdown">
+                <a href="#  ">Services &#9662;</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Bridal Car Services</a></li>
+                    <li><a href="#">Towing Services 24/7</a></li>
+                    <li><a href="#">Trucking Services</a></li>
+                    <li><a href="#">Heavy Equipment Rental</a></li>
+                    <li><a href="#">General Construction & Maintenance Services</a></li>
+                    <li><a href="#">Furniture Hotel & Residential</a></li>
+                    <li><a href="#">Auto Parts</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+    <section class="hero">
+        <img src="IMG/image-removebg-preview.png">
+        <h1>Welcome to Penguin Sales & Services</h1>
+        <p>Your one-stop solution for auto services, equipment rental, and more.</p>
+        <a href="#" class="cta-btn">Get Started</a>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card" href="#bridal">
+                <h3>Bridal Car Services</h3>
+                <p>Luxurious cars for your special day.</p>
+            </div>
+            <div class="service-card">
+                <h3>Towing Services 24/7</h3>
+                <p>Emergency towing available anytime.</p>
+            </div>
+            <div class="service-card">
+                <h3>Trucking Services</h3>
+                <p>Reliable logistics solutions.</p>
+            </div>
+            <div class="service-card">
+                <h3>Heavy Equipment Rental</h3>
+                <p>Top-tier machinery for your projects.</p>
+            </div>
+            <div class="service-card">
+                <h3>General Construction & Maintenance</h3>
+                <p>Quality construction and repairs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Furniture for Hotels & Residences</h3>
+                <p>Elegant and durable furniture options.</p>
+            </div>
+            <div class="service-card">
+                <h3>Auto Parts</h3>
+                <p>Genuine parts for various vehicles.</p>
+            </div>
+        </div>
+    </section>
+    <!--NEW SECTION-->
+    <section class="services" id="bridal">
+        <h2>Bridal Car Services</h2>
+        <div class="service-grid">
+            <img src="IMG/black-bmw-decorated-with-white-wedding-bouquets-1.jpg">
+            <div class="service-card">
+                <h3>Bridal Car Services</h3>
+                <p>Luxurious cars for your special day.</p>
+                <p>Package includes:
+                    – Bouquet of flowers<br>
+                    – VIP blinkers<br>
+                    – Driver in semi formal attire<br>
+                    – From hotel to ceremony<br>
+                    – From ceremony to reception<br>
+                    – First 3 hours rate<br>
+                    – Additional fee is applicable in excess of 3 hours<br>
+                    – Price starts at PhP 4,000.00 for our BMW E39<br>
+                    Please contact for booking assistance (0923) 086 8342<br>
+                    Price is subject to change without prior notice.</p>
+            </div>
+    </section>
+    <!--NEW SECTION-->
+    <section class="services" id="tow">
+        <h2>Towing Services</h2>
+        <div class="service-grid">
+            <img src="IMG/TOW2.jpg">
+            <div class="service-card">
+                <h3>Towing Services</h3>
+                <p>We are proud to inform you that we can handle any type of towing requirements, no matter how complex or complicated.</p>
+                <p>Our Services:<br>
+                    24-Hour Towing & Roadside Assistance<br>
+                    Light-Duty Towing<br>
+                    Flatbed Towing<br>
+                    Long-Distance Towing</p>
+            </div>
+    </section>
+    <!--NEW SECTION-->
+    <section class="services" id="trucking">
+        <h2>Trucking Services</h2>
+        <div class="service-grid">
+            <img src="IMG/TRUKING1.jpg">
+            <div class="service-card">
+                <h3>Trucking Services</h3>
+                <p>We offer different trucking services.</p>
+                <p>Our Services:<br>
+                    24-Hour Towing & Roadside Assistance<br>
+                    Light-Duty Towing<br>
+                    Flatbed Towing<br>
+                    Long-Distance Towing</p>
+            </div>
+    </section>
+    <!--NEW SECTION-->
+    <section class="services" id="heavy">
+        <h2>Heavy Equipment Rental</h2>
+        <div class="service-grid">
+            <img src="IMG/heavy1.jpg">
+            <div class="service-card">
+                <h3>Heavy Equipments</h3>
+                <p>We are proud to inform you that we can handle any type of towing requirements, no matter how complex or complicated.</p>
+                <p>Our Services:<br>
+                    24-Hour Towing & Roadside Assistance<br>
+                    Light-Duty Towing<br>
+                    Flatbed Towing<br>
+                    Long-Distance Towing</p>
+            </div>
+    </section>
+    <!--NEW SECTION-->
+    <section class="services" id="general">
+        <h2>General Construction & Maintenance Services</h2>
+        <div class="service-grid">
+            <img src="IMG/gen1.jpg">
+            <div class="service-card">
+                <h3>General Construction & Maintenance Services</h3>
+                <p>We are proud to inform you that we can handle any type of towing requirements, no matter how complex or complicated.</p>
+                <p>Our Services:<br>
+                    24-Hour Towing & Roadside Assistance<br>
+                    Light-Duty Towing<br>
+                    Flatbed Towing<br>
+                    Long-Distance Towing</p>
+            </div>
+    </section>
+    <!--NEW SECTION-->
+    <section class="services" id="heavy">
+        <h2>Furniture Hotel and Residential Buildings</h2>
+        <div class="service-grid">
+            <img src="IMG/fur1.jpg">
+            <div class="service-card">
+                <h3>Furniture Hotel and Residential Buildings</h3>
+                <p>We are proud to inform you that we can handle any type of towing requirements, no matter how complex or complicated.</p>
+                <p>Our Services:<br>
+                    24-Hour Towing & Roadside Assistance<br>
+                    Light-Duty Towing<br>
+                    Flatbed Towing<br>
+                    Long-Distance Towing</p>
+            </div>
+    </section>
+    <!--NEW SECTION-->
+    <section class="services" id="heavy">
+        <h2>Auto Parts</h2>
+        <div class="service-grid">
+            <img src="IMG/parts1.jpg">
+            <div class="service-card">
+                <h3>Auto Parts</h3>
+                <p>We are proud to inform you that we can handle any type of towing requirements, no matter how complex or complicated.</p>
+                <p>Our Services:<br>
+                    24-Hour Towing & Roadside Assistance<br>
+                    Light-Duty Towing<br>
+                    Flatbed Towing<br>
+                    Long-Distance Towing</p>
+            </div>
+    </section>
+     <!--NEW SECTION-->
+     <section class="services" id="about">
+        <h2>About Us</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <h3>Auto Parts</h3>
+                <p>At Penguin Sales & Services Company, we are committed to delivering excellence across a wide range of services, 
+                    including bridal car rentals, 24/7 towing, trucking, heavy equipment rental, general construction and maintenance, 
+                    furniture for hotels and residences, and auto parts. With a passion for quality and customer satisfaction, 
+                    we take pride in making every service seamless, reliable, and tailored to your needs. Our mission is simple: 
+                    "We Make It Happen." Whether you're looking for premium transport solutions, construction expertise, or high-quality furnishings, 
+                    we are here to provide top-tier service with professionalism and dedication.</p>
+            </div>
+    </section>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelector(".dropdown");
+    
+    dropdown.addEventListener("click", function (event) {
+        event.stopPropagation();
+        this.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function () {
+        dropdown.classList.remove("active");
+    });
+});
+    </script>
+</body>
+<footer class="bg-dark text-white py-12">
+    <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Company Info -->
+            <div>
+                <h3 class="text-xl font-bold mb-4 text-gold">Penguin Sales & Services</h3>
+                <p class="mb-4">We Make It Happen.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-gold"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white hover:text-gold"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white hover:text-gold"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white hover:text-gold"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            
+            <!-- Quick Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="hover:text-accent">Home</a></li>
+                    <li><a href="about.html" class="hover:text-accent">About Us</a></li>
+                    <li><a href="service.html" class="hover:text-accent">Services</a></li>
+                    <li><a href="contact.html" class="hover:text-accent">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <!-- Services Links -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Our Services</h3>
+                <ul class="space-y-2">
+                    <li><a href="service.html" class="hover:text-accent">Bridal Car Services</a></li>
+                    <li><a href="service.html" class="hover:text-accent">Towing Services</a></li>
+                    <li><a href="service.html" class="hover:text-accent">Trucking Services</a></li>
+                    <li><a href="service.html" class="hover:text-accent">Equipment Rental</a></li>
+                </ul>
+            </div>
+            
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <ul class="space-y-2">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-2"></i>
+                        <span>123 Main Street, City, Country</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-phone-alt mr-2"></i>
+                        <span>+123 456 7890</span>
+                    </li>
+                    <li class="flex items-center">
+                        <i class="fas fa-envelope mr-2"></i>
+                        <span>info@penguin.asia</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-gold opacity-50 mt-8 pt-8 text-center">
+            <p>&copy; 2023 Penguin Sales & Services Company. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</html>
